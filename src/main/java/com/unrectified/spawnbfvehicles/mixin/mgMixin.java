@@ -1,15 +1,17 @@
 
 package com.unrectified.spawnbfvehicles.mixin;
 
-import com.boehmod.blockfront.ko;
+import com.boehmod.blockfront.mg;
 import net.minecraft.server.level.ServerLevel;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@Mixin({ko.class})
-public class kmMixin {
+@Mixin(mg.class)
+public class mgMixin {
     @Overwrite
-    public void a(@NotNull ServerLevel var1) {
+    public static void a(@NotNull net.neoforged.neoforge.event.tick.EntityTickEvent.Post var0) {
+        // Ne rien faire → empêche discard()
     }
 }
+

@@ -5,13 +5,13 @@
 
 package com.unrectified.spawnbfvehicles.mixin;
 
-import com.boehmod.blockfront.kn;
+import com.boehmod.blockfront.kr;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@Mixin({kn.class})
-public class klMixin {
+@Mixin(kr.class)
+public class krMixin {
     @Overwrite
-    public void aG() {
+    public void aI() {
     }
 }
